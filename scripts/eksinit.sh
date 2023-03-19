@@ -162,6 +162,10 @@ helm completion bash >> ~/.bash_completion
 . ~/.bash_completion
 source <(helm completion bash)
 
+# helm update
+helm repo add karpenter https://charts.karpenter.sh/
+helm repo update
+
 
 # cleanup
 rm -vf ${HOME}/.aws/credentials
